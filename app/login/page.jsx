@@ -7,6 +7,9 @@ export default function LoginPage() {
 			response_type=code
 			&client_id=${CLIENT_ID}
 			&redirect_uri=${REDIRECT_URI}
-			&show_dialog=true`}>Log in with Spotify</a>
+			&show_dialog=true
+            &scope=playlist-read-private
+            `
+        }>Log in with Spotify</a>
 	);
 }
